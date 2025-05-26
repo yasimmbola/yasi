@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('fond.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optionnel : effet parallaxe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: aqua;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    display: block;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #1557b0;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .link-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+}
